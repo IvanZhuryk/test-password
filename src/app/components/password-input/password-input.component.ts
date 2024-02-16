@@ -42,7 +42,9 @@ export class PasswordInputComponent implements ControlValueAccessor {
   registerOnChange(fn: (value: string) => void): void {
     this.onChange = fn;
   }
-  registerOnTouched(fn: any): void {}
+  registerOnTouched(fn: () => void): void {
+    this.onTouched = fn;
+  }
   @HostListener('focusout')
   onFocusOut() {
     this.onTouched;
