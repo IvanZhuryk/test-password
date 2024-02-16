@@ -1,35 +1,5 @@
+
 input.ng-invalid.ng-touched {
     border: red 2px solid;
-}
-input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 0px;
-    width: 0px;
-}
-.sections {
-    margin-top: 10px;
-    width: 246px;
-    height: 5px;
-    display: flex;
-}
-.section-red {
-    width: 88px;
-    height: 5px;
-    background-color: red;
-}
-.section-green {
-    width: 88px;
-    height: 5px;
-    background-color: green;
-}
-.section-yellow {
-    width: 88px;
-    height: 5px;
-    background-color: yellow;
-}
-.section-gray {
-    width: 88px;
-    height: 5px;
-    background-color: grey;
 }
 

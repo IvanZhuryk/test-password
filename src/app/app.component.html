@@ -1,16 +1,9 @@
 <form [formGroup]="reactiveForm">
   <label for="name">Password: </label>
-  <input
-    class="password"
-    id="name"
-    type="password"
-    placeholder="password"
-    formControlName="password"
-    (ngModelChange)="passwordFormField()"
-  />
-  <div class="sections">
-    <div [className]="'section-' + section1"></div>
-    <div [className]="'section-' + section2"></div>
-    <div [className]="'section-' + section3"></div>
-  </div>
+  <app-password-input
+    [formControlName]="'password'"
+    [(ngModel)]="value"
+    (ngModelChange)="ngOnChange()"
+  ></app-password-input>
+  <app-section></app-section>
 </form>
